@@ -56,7 +56,7 @@ button.addEventListener("click", () => {
     fetch('send_mail.php')
       .then(response => {
         if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
+          button.textContent = "Check Your Email ;)";
         } else {
           console.error('Failed to send email');
           button.textContent = "Error 😞";
@@ -147,12 +147,12 @@ function drawText() {
     }
     if(frameNumber > 1500 && frameNumber < 1750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("is so incredibly lucky for me", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("is so incredibly lucky for me", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -189,9 +189,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["I love you so much {name}, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["I love you so much jay, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("I love you so much {name}, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
+            context.fillText("I love you so much jay, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
